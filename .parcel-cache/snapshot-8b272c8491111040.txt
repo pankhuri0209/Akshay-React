@@ -1,4 +1,4 @@
-6999
+7000
 112C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\@babel\highlight\node_modules\chalk\types133669305471940189 1
 104C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\@parcel\workers\src\childState.js133669305478507538 0
 94C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\color-convert\README.md133669305468679299 0
@@ -2443,16 +2443,16 @@
 73C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\dist\index.html133669357429108428 0
 99C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\@swc\helpers\_\_create_class133669305634607995 1
 109C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\caniuse-lite\data\features\css-sel3.js133669305633242693 0
-80C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\dist\index.7826abd7.js133669360174416047 0
+80C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\dist\index.7826abd7.js133669372404346148 0
 123C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\@swc\helpers\src\_class_extract_field_descriptor.mjs133669305648516923 0
-84C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\dist\index.7826abd7.js.map133669360174562640 0
+84C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\dist\index.7826abd7.js.map133669372404508890 0
 125C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest_remap.c133669305559665443 0
 66C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\.babelrc133669331886786344 0
 102C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\caniuse-lite\data\regions\RE.js133669305688494556 0
-64C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\App.js133669360172428489 0
+64C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\App.js133669372401613919 0
 102C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\htmlnano\lib\modules\custom.mjs133669305563257517 0
 121C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\css-select\node_modules\entities\lib\escape.js.map133669305546584597 0
-62C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\dist133669360174592900 1
+62C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\dist133669372404534320 1
 67C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\index.css133669289601396664 0
 102C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\caniuse-lite\data\regions\LT.js133669305679290901 0
 147C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-test.cmd133669305757433788 0
@@ -4470,6 +4470,7 @@
 115C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\caniuse-lite\data\features\resizeobserver.js133669305688985561 0
 93C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\css-tree\lib\convertor133669305622431695 1
 92C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\css-tree\lib\index.js133669305622853270 0
+68C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\.gitignore133669371433131464 0
 93C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\css-tree\lib\tokenizer133669305637485257 1
 114C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\@babel\highlight\node_modules\chalk\license133669305462224066 0
 123C:\Users\HP\Desktop\Learn\react\akshay-react\Akshay-React\node_modules\css-select\node_modules\entities\lib\escape.d.ts.map133669305545177970 0

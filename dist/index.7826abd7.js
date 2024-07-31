@@ -2954,6 +2954,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 const heading = /*#__PURE__*/ (0, _react.createElement)("h1", {
@@ -2981,22 +2982,58 @@ const heading2 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     lineNumber: 23,
     columnNumber: 18
 }, undefined);
-const container = /*#__PURE__*/ (0, _react.createElement)("div", {
-    id: "container",
-    hello: "world"
-}, [
-    /*#__PURE__*/ (0, _react.createElement)("h1", {
-        id: "title",
-        key: "h1"
-    }, "Heading 1 for parcel"),
-    /*#__PURE__*/ (0, _react.createElement)("ul", {}, [
-        /*#__PURE__*/ (0, _react.createElement)("li", {}, "About us")
-    ])
-]);
+//components
+//-functional - new - t iwll use this most of the time
+//- class based component
+const HeaderComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Namaste React functional component"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 34,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "This is a h2 tag"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 35,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 33,
+        columnNumber: 10
+    }, undefined);
+};
+_c = HeaderComponent;
+// const container = createElement(
+//   "div",
+//   {
+//     id: "container",
+//     hello: "world",
+//   },
+//   [
+//     createElement(
+//       "h1",
+//       {
+//         id: "title",
+//         key: "h1",
+//       },
+//       "Heading 1 for parcel"
+//     ),
+//     createElement("ul", {}, [createElement("li", {}, "About us")]),
+//   ]
+// );
 // create root using createRoot
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 // passing react element inside root
-root.render(container);
+root.render(heading);
+var _c;
+$RefreshReg$(_c, "HeaderComponent");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
