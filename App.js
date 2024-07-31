@@ -1,10 +1,11 @@
-import React from "react";
+import { createElement } from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = React.createElement(
+const heading = createElement(
   "h1",
   {
     id: "title",
+    key: "h1",
     style: {
       background: "red",
     },
@@ -12,20 +13,41 @@ const heading = React.createElement(
   },
   "heading"
 );
-const heading1 = React.createElement(
-  "h1",
-  {
-    id: "title",
-  },
-  "heading1"
+// const heading2 = createElement(
+//   "h2",
+
+//   {
+//     id: "title",
+//     key: "h2",
+//   },
+//   "heading1"
+// );
+
+//jsx
+
+const heading2 = (
+  <h1 is="title" key="h2">
+    Namaste React
+  </h1>
 );
 
-const container = React.createElement(
+const container = createElement(
   "div",
   {
     id: "container",
+    hello: "world",
   },
-  [heading, heading1]
+  [
+    createElement(
+      "h1",
+      {
+        id: "title",
+        key: "h1",
+      },
+      "Heading 1 for parcel"
+    ),
+    createElement("ul", {}, [createElement("li", {}, "About us")]),
+  ]
 );
 
 // create root using createRoot
