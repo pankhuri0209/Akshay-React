@@ -1,6 +1,8 @@
 import React, { createElement } from "react";
 import ReactDOM from "react-dom/client";
-import logo from "./assets/logo.png";
+import logo from "../assets/logo.png";
+//import Header from "./components/Header";
+import NewHeader, { Title } from "./components/Header.js";
 const heading = createElement(
   "h1",
   {
@@ -13,14 +15,14 @@ const heading = createElement(
   },
   "heading"
 );
-const Title = () => (
-  // <h1 id="title" key="h2">
-  //   Shalu's Kitchen
-  // </h1>
-  <a href="/">
-    <img className="logo " alt="logo" src={logo} />
-  </a>
-);
+// const Title = () => (
+//   // <h1 id="title" key="h2">
+//   //   Shalu's Kitchen
+//   // </h1>
+//   <a href="/">
+//     <img className="logo " alt="logo" src={logo} />
+//   </a>
+// );
 // const heading2 = createElement(
 //   "h2",
 
@@ -47,7 +49,7 @@ const heading2 = (
 const HeaderComponent = () => {
   return (
     <div>
-      <Title />
+      <NewHeader />
       {console.log("Header Component")}
       <h1>Namaste React functional component</h1>
       <h2>This is a h2 tag</h2>
@@ -73,21 +75,6 @@ const HeaderComponent = () => {
 //     createElement("ul", {}, [createElement("li", {}, "About us")]),
 //   ]
 // );
-const Header = () => {
-  return (
-    <div className="header">
-      <Title />
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About </li>
-          <li>Contact</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
 
 //config driven ui
 const config = [
@@ -2127,7 +2114,7 @@ const AppLayout = () => {
     //   </Title>
     // </div>
     <React.Fragment>
-      <Header />
+      <NewHeader />
       <Body />
       <Footer />
     </React.Fragment>
