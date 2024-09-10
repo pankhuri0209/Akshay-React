@@ -5154,13 +5154,16 @@ const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "resturants-list",
         children: restaurantList.map((restaurant)=>{
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                ...restaurant.data
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 1868,
-                columnNumber: 14
-            }, undefined);
+            return /*#__PURE__*/ (0, _react.createElement)(RestaurantCard, {
+                ...restaurant.data,
+                key: restaurant.data.id,
+                __source: {
+                    fileName: "App.js",
+                    lineNumber: 1868,
+                    columnNumber: 14
+                },
+                __self: undefined
+            });
         })
     }, void 0, false, {
         fileName: "App.js",

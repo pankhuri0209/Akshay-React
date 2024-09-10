@@ -2080,7 +2080,7 @@ const Body = () => {
   return (
     <div className="resturants-list">
       {restaurantList.map((restaurant) => {
-        return <RestaurantCard {...restaurant.data} />;
+        return <RestaurantCard {...restaurant.data} key={restaurant.data.id} />;
       })}
       {/* <RestaurantCard
         name={restaurantList[0].data.name}
