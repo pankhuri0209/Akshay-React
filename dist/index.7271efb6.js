@@ -27835,14 +27835,21 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
 var _restaurantCard = require("./RestaurantCard");
 var _constants = require("../constants");
+var _react = require("react");
 var _s = $RefreshSig$();
+function filterData(searchText, restaurants) {
+    const filterData = restaurants.filter((restaurant)=>restaurant?.data?.name.toLowerCase().includes(searchText.toLowerCase()));
+    return filterData;
+}
+// Body Component for body section: It contain all restaurant cards
+// We are mapping restaurantList array and passing JSON data to RestaurantCard component as props with unique key as index
 const Body = ()=>{
     _s();
-    let searchTxt = "KFC";
-    const [searchInput, setSearchInput] = (0, _react.useState)("KFC"); //state variable
+    // useState: To create a state variable, searchText is local state variable
+    const [searchText, setSearchText] = (0, _react.useState)("");
+    const [restaurants, setRestaurants] = (0, _react.useState)((0, _constants.restaurantList));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27851,57 +27858,54 @@ const Body = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "text",
                         className: "search-input",
-                        placeholder: "Search",
-                        //    value={searchTxt}
-                        onChange: (e)=>{
-                            setSearchInput(e.target.value);
-                        // searchTxt = e.target.value;
-                        }
+                        placeholder: "Search a restaurant you want...",
+                        value: searchText,
+                        onChange: (e)=>setSearchText(e.target.value)
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 9,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "search-btn",
-                        children: [
-                            "Search -",
-                            searchInput
-                        ]
-                    }, void 0, true, {
+                        onClick: ()=>{
+                            // filter the data
+                            const data = filterData(searchText, restaurants);
+                            // update the state of restaurants list
+                            setRestaurants(data);
+                        },
+                        children: "Search"
+                    }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 15,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 8,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "restaurants-list",
-                children: (0, _constants.restaurantList).map((restaurant)=>{
-                    return /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCard.RestaurantCard), {
-                        ...restaurant.data,
-                        key: restaurant.data.id,
-                        __source: {
-                            fileName: "src/components/Body.js",
-                            lineNumber: 19,
-                            columnNumber: 16
-                        },
-                        __self: undefined
-                    });
+                children: restaurants.map((restaurant)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCard.RestaurantCard), {
+                        ...restaurant.data
+                    }, restaurant.data.id, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 29,
+                        columnNumber: 16
+                    }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 17,
+                lineNumber: 27,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "t+o8AkW+vIOZw2EjxlzLG7MwmPI=");
+_s(Body, "uj21aTnWNS4KUjQRmsuXzNGJExI=");
 _c = Body;
 exports.default = Body;
 var _c;
