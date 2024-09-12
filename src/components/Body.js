@@ -1,4 +1,4 @@
-import { RestaurantCard } from "./RestaurantCard";
+import RestaurantCard from "./RestaurantCard";
 import { IMG_CDN_URL, restaurantList, swiggy_api_URL } from "../constants";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
