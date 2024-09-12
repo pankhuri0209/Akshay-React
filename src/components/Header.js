@@ -1,3 +1,4 @@
+import { useState } from "react";
 import logo from "../../assets/logo.png";
 
 export const Title = () => (
@@ -9,9 +10,12 @@ export const Title = () => (
   </a>
 );
 const Header = () => {
+  const [title, setTitle] = useState("Food Villa");
   return (
     <div className="header">
       <Title />
+      <h1>{title}</h1>
+      <button onClick={() => setTitle("New food app")}>Change Title</button>
       <div className="nav-items">
         <ul>
           <li>Home</li>
