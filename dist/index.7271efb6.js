@@ -27578,14 +27578,6 @@ const Header = ()=>{
                 lineNumber: 14,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: ()=>setTitle("New food app"),
-                children: "Change Title"
-            }, void 0, false, {
-                fileName: "src/components/Header.js",
-                lineNumber: 15,
-                columnNumber: 7
-            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "nav-items",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27627,6 +27619,20 @@ const Header = ()=>{
             }, void 0, false, {
                 fileName: "src/components/Header.js",
                 lineNumber: 16,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                children: "Login"
+            }, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 24,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                children: "Logout"
+            }, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined)
         ]

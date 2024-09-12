@@ -15,7 +15,7 @@ const Header = () => {
     <div className="header">
       <Title />
       <h1>{title}</h1>
-      <button onClick={() => setTitle("New food app")}>Change Title</button>
+      {/* <button onClick={() => setTitle("New food app")}>Change Title</button> */}
       <div className="nav-items">
         <ul>
           <li>Home</li>
@@ -24,6 +24,8 @@ const Header = () => {
           <li>Cart</li>
         </ul>
       </div>
+      <button>Login</button>
+      <button>Logout</button>
     </div>
   );
 };
