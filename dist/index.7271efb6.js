@@ -27962,7 +27962,7 @@ const Body = ()=>{
                 lineNumber: 86,
                 columnNumber: 39
             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "restaurant-list",
+                className: "restaurants-list",
                 children: filteredRestaurants.map((restaurant)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCard.RestaurantCard), {
                         ...restaurant?.info
