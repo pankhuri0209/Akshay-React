@@ -11,6 +11,8 @@ export const Title = () => (
 );
 const Header = () => {
   const [title, setTitle] = useState("Food Villa");
+  const [isLoggedin, setIsLoggedin] = useState(true);
+
   return (
     <div className="header">
       <Title />
@@ -22,10 +24,24 @@ const Header = () => {
           <li>About </li>
           <li>Contact</li>
           <li>Cart</li>
+
+          <li>
+            {/* use conditional rendering for login and logout */}
+            {isLoggedin ? (
+              <button
+                className="logout-btn"
+                onClick={() => setIsLoggedin(false)}
+              >
+                Logout
+              </button>
+            ) : (
+              <button className="login-btn" onClick={() => setIsLoggedin(true)}>
+                Login
+              </button>
+            )}
+          </li>
         </ul>
       </div>
-      <button>Login</button>
-      <button>Logout</button>
     </div>
   );
 };

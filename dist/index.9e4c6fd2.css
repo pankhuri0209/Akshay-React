@@ -81,6 +81,13 @@
   font-size: small;
 }
 
+.shimmer-card {
+  background: #add8e6;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
 .footer {
   text-align: center;
   background-color: #01a390;

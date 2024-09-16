@@ -85,6 +85,13 @@
   padding: 0 5px 3px 0;
 }
 
+.shimmer-card {
+  width: 200px;
+  height: 200px;
+  background: lightblue;
+  margin: 20px;
+}
+
 /* footer CSS */
 .footer {
   margin: 10px;
