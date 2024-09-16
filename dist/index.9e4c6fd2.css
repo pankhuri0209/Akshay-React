@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -25,17 +24,6 @@
 .nav-items {
   width: auto;
   padding: 0 10px;
-=======
-#container {
-  background-color: red;
-}
-
-.header {
-  border: 1px solid #000;
-  justify-content: space-between;
-  margin: 10px;
-  display: flex;
->>>>>>> 6cf226ec594fe94e85d2df8350615daddae19d7c
 }
 
 .nav-items > ul {
@@ -44,7 +32,6 @@
 }
 
 .nav-items > ul > li {
-<<<<<<< HEAD
   cursor: pointer;
   padding: 40px 10px 0 0;
   font-size: large;
@@ -127,28 +114,4 @@
 .footer > strong > span {
   color: #cb3600;
 }
-=======
-  padding: 10px;
-}
-
-.logo {
-  width: 200px;
-}
-
-.card {
-  border: 1px solid #000;
-  width: 200px;
-  margin: 10px;
-  padding: 10px;
-}
-
-.card > img {
-  width: 100%;
-}
-
-.resturants-list {
-  flex-wrap: wrap;
-  display: flex;
-}
->>>>>>> 6cf226ec594fe94e85d2df8350615daddae19d7c
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
