@@ -10,6 +10,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 
 import Error from "./components/Error";
+import RestaurantMenu from "./components/RestaurantMenu.js";
 const AppLayout = () => {
   return (
     <React.Fragment>
@@ -30,6 +31,10 @@ const appRouter = createBrowserRouter([
       { path: "/", element: <Body /> },
       { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },
+      {
+        path: "/restaurant/:id",
+        element: <RestaurantMenu />,
+      },
     ],
   },
 ]);
