@@ -21,6 +21,7 @@ import { shimmer_card_unit } from "../constants";
 //     </div>
 //   );
 // };
+//
 const Shimmer = () => {
   return (
     <div className="restaurants-list">
