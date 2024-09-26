@@ -37176,14 +37176,19 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
 const Profile = (props)=>{
+    _s();
+    const [count, setCount] = (0, _react.useState)(0);
+    const [count2, setCount2] = (0, _react.useState)(0);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Profile Component"
             }, void 0, false, {
                 fileName: "src/components/Profile.js",
-                lineNumber: 3,
+                lineNumber: 6,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -37193,16 +37198,38 @@ const Profile = (props)=>{
                 ]
             }, void 0, true, {
                 fileName: "src/components/Profile.js",
-                lineNumber: 4,
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: [
+                    "Count: ",
+                    count
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Profile.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>{
+                    setCount(1);
+                    setCount2(2);
+                },
+                children: "Count"
+            }, void 0, false, {
+                fileName: "src/components/Profile.js",
+                lineNumber: 9,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Profile.js",
-        lineNumber: 2,
+        lineNumber: 5,
         columnNumber: 10
     }, undefined);
 };
+_s(Profile, "pXB2Bwaqd1DonK1TeTeTlzaH1UQ=");
 _c = Profile;
 exports.default = Profile;
 var _c;
@@ -37213,7 +37240,7 @@ $RefreshReg$(_c, "Profile");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aeEz8":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aeEz8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1beb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37226,14 +37253,24 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 class Profile extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+        //create state
+        this.state = {
+            count: 0,
+            count2: 0
+        };
+    }
+    componentDidMount() {}
     render() {
+        const { count } = this.state;
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: "Profile Class Component "
                 }, void 0, false, {
                     fileName: "src/components/ProfileClass.js",
-                    lineNumber: 5,
+                    lineNumber: 18,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -37243,7 +37280,7 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/ProfileClass.js",
-                    lineNumber: 6,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -37253,13 +37290,36 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/ProfileClass.js",
-                    lineNumber: 7,
+                    lineNumber: 20,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: [
+                        "Count: ",
+                        count
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/ProfileClass.js",
+                    lineNumber: 21,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>{
+                        this.setState({
+                            count: 1,
+                            count2: 2
+                        });
+                    },
+                    children: "Set Count"
+                }, void 0, false, {
+                    fileName: "src/components/ProfileClass.js",
+                    lineNumber: 22,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/ProfileClass.js",
-            lineNumber: 4,
+            lineNumber: 17,
             columnNumber: 12
         }, this);
     }
