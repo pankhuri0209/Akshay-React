@@ -37274,6 +37274,10 @@ class Profile extends (0, _reactDefault.default).Component {
             userInfo: json
         });
     }
+    componentDidUpdate(prevState) {
+        this.state.count, prevState.count;
+    }
+    componentWillUnmount() {}
     render() {
         const { count } = this.state;
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37282,14 +37286,14 @@ class Profile extends (0, _reactDefault.default).Component {
                     children: "Profile Class Component "
                 }, void 0, false, {
                     fileName: "src/components/ProfileClass.js",
-                    lineNumber: 29,
+                    lineNumber: 33,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     src: this.state.userInfo.avatar_url
                 }, void 0, false, {
                     fileName: "src/components/ProfileClass.js",
-                    lineNumber: 30,
+                    lineNumber: 34,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -37299,7 +37303,7 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/ProfileClass.js",
-                    lineNumber: 31,
+                    lineNumber: 35,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -37309,13 +37313,13 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/ProfileClass.js",
-                    lineNumber: 32,
+                    lineNumber: 36,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/ProfileClass.js",
-            lineNumber: 28,
+            lineNumber: 32,
             columnNumber: 12
         }, this);
     }

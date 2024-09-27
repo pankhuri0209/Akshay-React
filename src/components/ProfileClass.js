@@ -19,6 +19,16 @@ class Profile extends React.Component {
     console.log(" componentDidMount");
   }
 
+  componentDidUpdate(prevState) {
+    console.log(" componentDidUpdate");
+    if (this.state.count !== prevState.count) {
+    }
+  }
+
+  componentWillUnmount() {
+    console.log(" componentWillUnmount");
+  }
+
   render() {
     const { count } = this.state;
     console.log("render");
