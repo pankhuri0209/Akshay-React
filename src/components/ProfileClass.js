@@ -3,16 +3,19 @@ import React from "react";
 class Profile extends React.Component {
   constructor(props) {
     super(props);
-
+    this.state = { userInfo: { name: "DummyName", location: "DummyLocation" } };
     //create state
-    this.state = {
-      count: 0,
-      count2: 0,
-    };
+    // this.state = {
+    //   count: 0,
+    //   count2: 0,
+    // };
     console.log("Constructor");
   }
 
-  componentDidMount() {
+  async componentDidMount() {
+    const data = await fetch("https://api.github.com/users/pankhuri0209");
+    const json = await data.json();
+    this.setState({ userInfo: json });
     console.log(" componentDidMount");
   }
 
@@ -22,16 +25,17 @@ class Profile extends React.Component {
     return (
       <div>
         <h1>Profile Class Component </h1>
-        <h2>Name: {this.props.name}</h2>
-        <h2>XYZ: {this.props.xyz}</h2>
-        <h2>Count: {count}</h2>
+        <img src={this.state.userInfo.avatar_url} />
+        <h2>Name: {this.state.userInfo.name}</h2>
+        <h2>Location: {this.state.userInfo.location}</h2>
+        {/* <h2>Count: {count}</h2>
         <button
           onClick={() => {
             this.setState({ count: 1, count2: 2 });
           }}
         >
           Set Count
-        </button>
+        </button> */}
       </div>
     );
   }

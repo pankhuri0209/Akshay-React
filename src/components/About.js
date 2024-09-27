@@ -1,16 +1,30 @@
 import { Outlet } from "react-router-dom";
 import ProfileFunctionalComponent from "./Profile";
-
+import { Component } from "react";
 import Profile from "./ProfileClass";
-const About = () => {
-  return (
-    <div>
-      <h1>About Us Page</h1>
-      <p> {""}This is a namaste react course chapter 7</p>
-      <ProfileFunctionalComponent name={"Pankhuri"} />
-      <Profile name={"Pankhuri class"} xyz="abc" />
-    </div>
-  );
-};
+
+class About extends Component {
+  constructor(props) {
+    super(props);
+
+    //  this.console.log("constructor");
+  }
+
+  async componentDidMount() {
+    console.log("componentDidMount");
+  }
+
+  render() {
+    console.log("render");
+    return (
+      <div>
+        <h1>About Us Page</h1>
+        <p>This is context</p>
+        <ProfileFunctionalComponent name={"Pankhuri"} />
+        <Profile name={"Pankhuri"} />
+      </div>
+    );
+  }
+}
 
 export default About;
