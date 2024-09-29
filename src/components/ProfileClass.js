@@ -9,7 +9,7 @@ class Profile extends React.Component {
     //   count: 0,
     //   count2: 0,
     // };
-    console.log("Constructor");
+    console.log("Constructor---");
   }
 
   async componentDidMount() {
