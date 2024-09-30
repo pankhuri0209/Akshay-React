@@ -11,7 +11,7 @@ class About extends Component {
   }
 
   async componentDidMount() {
-    console.log("componentDidMount");
+    console.log("componentDidMount--");
   }
 
   render() {
