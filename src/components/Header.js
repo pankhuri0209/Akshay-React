@@ -14,7 +14,7 @@ export const Title = () => (
 const Header = () => {
   const [title, setTitle] = useState("Food Villa");
   const [isLoggedin, setIsLoggedin] = useState(true);
-  const [getLocalVariables, setLocalVariables] = useLocalStorage();
+  //const [getLocalVariables, setLocalVariables] = useLocalStorage();
   const isOnline = useOnline();
 
   return (
@@ -36,6 +36,9 @@ const Header = () => {
             <li>Contact</li>
           </Link>
           <li>Cart</li>
+          <Link to="/instamart">
+            <li>Instamart </li>
+          </Link>
         </ul>
       </div>
       <h1>{isOnline ? "✅" : "🔴"}</h1>
