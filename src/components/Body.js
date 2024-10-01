@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { filterData } from "../utils/helper";
+import useOnline from "../utils/useOnline";
+
 // Body Component for body section: It contain all restaurant cards
 const Body = () => {
   // useState: To create a state variable, searchText, allRestaurants and filteredRestaurants is local state variable
@@ -49,7 +51,10 @@ const Body = () => {
       console.log(error);
     }
   }
-
+  const isOnline = useOnline();
+  if (!isOnline) {
+    return <h1>Offline, please check your internet connection</h1>;
+  }
   // use searchData function and set condition if data is empty show error message
   const searchData = (searchText, restaurants) => {
     if (searchText !== "") {

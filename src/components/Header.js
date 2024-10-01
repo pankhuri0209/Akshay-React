@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+import useOnline from "../utils/useOnline";
 
 export const Title = () => (
   // <h1 id="title" key="h2">
@@ -13,6 +14,8 @@ export const Title = () => (
 const Header = () => {
   const [title, setTitle] = useState("Food Villa");
   const [isLoggedin, setIsLoggedin] = useState(true);
+  const [getLocalVariables, setLocalVariables] = useLocalStorage();
+  const isOnline = useOnline();
 
   return (
     <div className="header">
@@ -33,24 +36,20 @@ const Header = () => {
             <li>Contact</li>
           </Link>
           <li>Cart</li>
-
-          <li>
-            {/* use conditional rendering for login and logout */}
-            {isLoggedin ? (
-              <button
-                className="logout-btn"
-                onClick={() => setIsLoggedin(false)}
-              >
-                Logout
-              </button>
-            ) : (
-              <button className="login-btn" onClick={() => setIsLoggedin(true)}>
-                Login
-              </button>
-            )}
-          </li>
         </ul>
       </div>
+      <h1>{isOnline ? "✅" : "🔴"}</h1>
+
+      {/* use conditional rendering for login and logout */}
+      {isLoggedin ? (
+        <button className="logout-btn" onClick={() => setIsLoggedin(false)}>
+          Logout
+        </button>
+      ) : (
+        <button className="login-btn" onClick={() => setIsLoggedin(true)}>
+          Login
+        </button>
+      )}
     </div>
   );
 };
