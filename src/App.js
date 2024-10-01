@@ -6,13 +6,16 @@ import NewHeader, { Title } from "./components/Header.js";
 import Footer from "./components/Footer.js";
 import Body from "./components/Body.js";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import About from "./components/About";
+// import About from "./components/About";
 import Contact from "./components/Contact";
 import Profile from "./components/Profile";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu.js";
 import Shimmer from "./components/Shimmer.js";
 //import Instamart from "./components/Instamart.js";
+
+const About = lazy(() => import("./components/About.js"));
+
 const AppLayout = () => {
   return (
     <React.Fragment>
@@ -35,7 +38,11 @@ const appRouter = createBrowserRouter([
       { path: "/", element: <Body /> },
       {
         path: "/about",
-        element: <About />,
+        element: (
+          <Suspense fallback={<h1>Loading..</h1>}>
+            <About />
+          </Suspense>
+        ),
 
         children: [
           {
